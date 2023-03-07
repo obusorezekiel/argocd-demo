@@ -3,8 +3,8 @@ kind: Service
 metadata:
   creationTimestamp: null
   labels:
-    app: bgd
-  name: bgd
+    app: nginx-demo
+  name: nginx-demo
   namespace: test
 spec:
   ports:
@@ -12,4 +12,4 @@ spec:
     protocol: TCP
     targetPort: 8080
   selector:
-    app: bgd
+    app: nginx-demo

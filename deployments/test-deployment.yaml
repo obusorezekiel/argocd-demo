@@ -2,21 +2,21 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: bgd
-  name: bgd
+    app: nginx-demo
+  name: nginx-demo
   namespace: test
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: bgd
+      app: nginx-demo
   strategy: {}
   template:
     metadata:
       labels:
-        app: bgd
+        app: nginx-demo
     spec:
       containers:
       - image: nginx
-        name: bgd
+        name: nginx-demo
         resources: {}
